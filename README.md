@@ -1,3 +1,6 @@
+IMPORTANT
+=========
+
 The DarkRP modification addon
 ==================
 for DarkRP 2.5.0 and above.
