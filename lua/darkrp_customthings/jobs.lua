@@ -19,9 +19,75 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomJobFields
 Add jobs under the following line:
 ---------------------------------------------------------------------------*/
 
+     TEAM_ADMIN = DarkRP.createJob("Admin On Duty", {
+        color = Color(255, 0, 0, 255),
+        model = "models/player/combine_super_soldier.mdl",
+        description = [[Your an admin on duty, You know what to do, Dont abuse!]],
+        weapons = {"arrest_stick", "unarrest_stick", "weapon_mp52", "stunstick", "door_ram", "weaponchecker"},
+        command = "admin",
+        max = 4,
+        salary = 0,
+        admin = 1,
+        vote = false,
+        hasLicense = true,
+     })
+     
+     TEAM_THIEF = DarkRP.createJob("Thief", {
+        color = Color(80, 80, 80, 255),
+        model = "models/player/artic.mdl",
+        description = [[You are a thief, You should use your skills to steal peoples valubles, or sell your skills for other purposes]],
+        weapons = {"lockpick","door_ram"},
+        command = "thief",
+        max = 3,
+        salary = 50,
+        admin = 0,
+        vote = false,
+        hasLicense = false,
+     })
 
-
-
+     TEAM_SWAT = DarkRP.createJob("SWAT", {
+        color = Color(0,0, 139, 255),
+        model = "models/player/swat.mdl",
+        description = [[your duty is for heavy strikes when needed. You should stay in the PD
+                until backup is needed.
+                Do everything you can to keep the city safe.]],
+        weapons = {"arrest_stick", "unarrest_stick", "weapon_glock2", "weapon_ak472", "ls_sniper", "weapon_m42", "weapon_mp52", "stunstick", "door_ram", "weaponchecker"},
+        command = "swat",
+        max = 3,
+        salary = 100,
+        admin = 0,
+        vote = true,
+        hasLicense = true,
+     })
+     
+     TEAM_SWAT_LEADER = DarkRP.createJob("SWAT leader", {
+        color = Color(25, 25, 112, 255),
+        model = "models/player/gasmask.mdl",
+        description = [[your duty is for heavy strikes when needed. You should stay in the PD
+                until backup is needed.
+                Do everything you can to keep the city safe.]],
+        weapons = {"arrest_stick", "unarrest_stick", "weapon_glock2", "weapon_ak472", "ls_sniper", "weapon_m42", "weapon_mp52", "stunstick", "door_ram", "weaponchecker"},
+        command = "swatleader",
+        max = 1,
+        salary = 125,
+        admin = 0,
+        vote = true,
+        hasLicense = true,
+     })
+     
+     TEAM_BLACK_MARKET_DEALER = DarkRP.createJob("Black Market Dealer", {
+        color = Color(41, 41, 41, 255),
+        model = "models/player/artic.mdl",
+        description = [[You are to sell illegal goods to the mob and thieves to aid them in their ventures.]],
+        weapons = {},
+        command = "blackmarketdealer",
+        max = 2,
+        salary = 45,
+        admin = 0,
+        vote = false,
+        hasLicense = false,
+     })
+     
 
 
 
@@ -40,6 +106,8 @@ GAMEMODE.CivilProtection = {
 	[TEAM_POLICE] = true,
 	[TEAM_CHIEF] = true,
 	[TEAM_MAYOR] = true,
+	[TEAM_SWAT] = true,
+	[TEAM_SWAT_LEADER] = true,
 }
 
 /*---------------------------------------------------------------------------
