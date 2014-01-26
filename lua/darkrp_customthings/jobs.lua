@@ -44,9 +44,6 @@ Add jobs under the following line:
         admin = 0,
         vote = false,
         hasLicense = false,
-        
-        customCheck = function(ply) return ply:GetNWString("usergroup") == "donator" or ply:IsAdmin() end, -- The extra check function. Enter nil or nothing to not have a restriction
-    	CustomCheckFailMsg = "This job is VIP only!" -- Allows you to tell the user what went wrong when attempting to switch jobs
      })
 
      TEAM_SWAT = DarkRP.createJob("SWAT", {
