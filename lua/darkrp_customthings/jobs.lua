@@ -140,7 +140,7 @@ Add jobs under the following line:
      })
 
      TEAM_CAR_DEALER = DarkRP.createJob("Car dealer", {
-        color = Color(41, 41, 41, 255),
+        color = Color(0, 200, 50, 255),
         model = "models/player/eli.mdl",
         description = [[You are to sell cars to the residents for a profit.]],
         weapons = {},
@@ -151,6 +151,21 @@ Add jobs under the following line:
         vote = false,
         hasLicense = false,
      })
+     
+     TEAM_TECH = DarkRP.createJob("Technician", {
+        color = Color(, 160, 200, 255),
+        model = "models/player/eli.mdl",
+        description = [[You are to build wire contraptions and sell them to players for security and other purposes. No entity finders or abusing.]],
+        weapons = {},
+        command = "technician",
+        max = 2,
+        salary = 45,
+        admin = 0,
+        vote = false,
+        hasLicense = false,
+     })
+     
+     
 
 /*---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
