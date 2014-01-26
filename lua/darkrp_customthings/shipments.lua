@@ -240,4 +240,24 @@ Add shipments and guns under the following line:
         onBought = function(ply, shipment, ent) end,
         getPrice = function(ply, price) return ply:GetNWString("usergroup") == "donator" and price * 0.9 or price end,
     })
+    
+    AddCustomShipment("Smith and wesson model 500", {
+        model = "models/weapons/w_sw_model_500.mdl", 
+        entity = "m9k_model500", 
+        price = 2100, 
+        amount = 10, 
+        separate = true, 
+        pricesep = 230, 
+        noship = false, 
+        allowed = {TEAM_GUN}, 
+        shipmodel = "models/items/item_item_crate.mdl", 
+        customCheck = function(ply) return ply:Frags() < 10 end, 
+        weight = 15, 
+        buttonColor = Color(255, 255, 255, 255), 
+        label = "Model 500", 
+        
+        shipmentClass = "spawned_shipment",
+        onBought = function(ply, shipment, ent) end,
+        getPrice = function(ply, price) return ply:GetNWString("usergroup") == "donator" and price * 0.9 or price end,
+    })
 
