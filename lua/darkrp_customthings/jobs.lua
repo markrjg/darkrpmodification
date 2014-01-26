@@ -35,7 +35,7 @@ Add jobs under the following line:
      
      TEAM_THIEF = DarkRP.createJob("Thief", {
         color = Color(80, 80, 80, 255),
-        model = "models/player/artic.mdl",
+        model = "models/player/arctic.mdl",
         description = [[You are a thief, You should use your skills to steal peoples valubles, or sell your skills for other purposes]],
         weapons = {"lockpick","door_ram"},
         command = "thief",
@@ -74,7 +74,7 @@ Add jobs under the following line:
      
      TEAM_BLACK_MARKET_DEALER = DarkRP.createJob("Black Market Dealer", {
         color = Color(41, 41, 41, 255),
-        model = "models/player/artic.mdl",
+        model = "models/player/eli.mdl",
         description = [[You are to sell illegal goods to the mob and thieves to aid them in their ventures.]],
         weapons = {},
         command = "blackmarketdealer",
@@ -84,6 +84,19 @@ Add jobs under the following line:
         vote = false,
         hasLicense = false,
      })
+     
+    TEAM_HITMAN = DarkRP.createJob("Hitman", {
+            color = Color(66, 0, 110, 255),
+        model = "models/player/pheonix.mdl",
+        description = [[You are hired to kill people for money. Dont kill random people.]],
+        weapons = {"ls_sniper"},
+        command = "hitman",
+        max = 2,
+        salary = 30,
+        admin = 0,
+        vote = true,
+        hasLicense = false,
+     })	
      
 
 
@@ -110,4 +123,4 @@ GAMEMODE.CivilProtection = {
 /*---------------------------------------------------------------------------
 Jobs that are hitmen (enables the hitman menu)
 ---------------------------------------------------------------------------*/
-DarkRP.addHitmanTeam(TEAM_MOB)
+DarkRP.addHitmanTeam(TEAM_HITMAN)
