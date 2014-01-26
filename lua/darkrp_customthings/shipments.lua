@@ -22,13 +22,27 @@ Add shipments and guns under the following line:
 
     AddCustomShipment("Pistol ammo", {
         model = "models/Items/BoxSRounds.mdl", 
+        separate = true, 
+        pricesep = 30, 
+        noship = false, 
+        allowed = {TEAM_GUN},
+        buttonColor = Color(255, 255, 255, 255), 
+        label = "Pistol Ammo", 
+
+        shipmentClass = "spawned_shipment",
+        onBought = function(ply, shipment, ent) end,
+        getPrice = function(ply, price) return ply:GetNWString("usergroup") == "donator" and price * 0.9 or price end,
+    })
+    
+    AddCustomShipment("SMG ammo", {
+        model = "models/Items/BoxMRounds.mdl", 
         entity = "m9k_usp", 
         price = 300,
         amount = 10,
         separate = true, 
         pricesep = 30, 
         noship = false, 
-        allowed = {},
+        allowed = {TEAM_GUN},
         shipmodel = "models/items/item_item_crate.mdl", 
         customCheck = function(ply) return ply:Frags() < 10 end,
         weight = 15, 
