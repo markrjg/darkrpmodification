@@ -34,7 +34,7 @@ Add jobs under the following line:
      
      TEAM_THIEF = DarkRP.createJob("Thief", {
         color = Color(80, 80, 80, 255),
-        model = "models/player/artic.mdl",
+        model = "models/player/arctic.mdl",
         description = [[You are a thief, You should use your skills to steal peoples valubles, or sell your skills for other purposes]],
         weapons = {"lockpick","door_ram"},
         command = "thief",
@@ -48,8 +48,7 @@ Add jobs under the following line:
      TEAM_SWAT = DarkRP.createJob("SWAT", {
         color = Color(0,0, 139, 255),
         model = "models/player/swat.mdl",
-        description = [[your duty is for heavy strikes when needed. You should stay in the PD
-                until backup is needed.
+        description = [[your duty is for heavy strikes when needed. You should stay in the PD until backup is needed.
                 Do everything you can to keep the city safe.]],
         weapons = {"arrest_stick", "unarrest_stick", "weapon_glock2", "weapon_ak472", "ls_sniper", "weapon_m42", "weapon_mp52", "stunstick", "door_ram", "weaponchecker"},
         command = "swat",
@@ -63,8 +62,7 @@ Add jobs under the following line:
      TEAM_SWAT_LEADER = DarkRP.createJob("SWAT leader", {
         color = Color(25, 25, 112, 255),
         model = "models/player/gasmask.mdl",
-        description = [[your duty is for heavy strikes when needed. You should stay in the PD
-                until backup is needed.
+        description = [[your duty is for heavy strikes when needed. You should stay in the PD until backup is needed.
                 Do everything you can to keep the city safe.]],
         weapons = {"arrest_stick", "unarrest_stick", "weapon_glock2", "weapon_ak472", "ls_sniper", "weapon_m42", "weapon_mp52", "stunstick", "door_ram", "weaponchecker"},
         command = "swatleader",
@@ -73,11 +71,12 @@ Add jobs under the following line:
         admin = 0,
         vote = true,
         hasLicense = true,
+        NeedToChangeFrom = TEAM_SWAT,
      })
      
      TEAM_BLACK_MARKET_DEALER = DarkRP.createJob("Black Market Dealer", {
         color = Color(41, 41, 41, 255),
-        model = "models/player/artic.mdl",
+        model = "models/player/leet.mdl",
         description = [[You are to sell illegal goods to the mob and thieves to aid them in their ventures.]],
         weapons = {},
         command = "blackmarketdealer",
@@ -88,6 +87,20 @@ Add jobs under the following line:
         hasLicense = false,
      })
      
+     TEAM_HITMAN = DarkRP.createJob("Hitman", {
+        color = Color(66, 0, 110, 255),
+        model = "models/player/artic.mdl",
+        description = [[You are a hitman. You kill people for money. Do not kill randomly.]],
+        weapons = {"ls_sniper"},
+        command = "hitman",
+        max = 2,
+        salary = 30,
+        admin = 0,
+        vote = true,
+        hasLicense = false,
+     })
+     
+
 
 
 
@@ -113,4 +126,4 @@ GAMEMODE.CivilProtection = {
 /*---------------------------------------------------------------------------
 Jobs that are hitmen (enables the hitman menu)
 ---------------------------------------------------------------------------*/
-DarkRP.addHitmanTeam(TEAM_MOB)
+DarkRP.addHitmanTeam(TEAM_HITMAN)
