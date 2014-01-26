@@ -44,8 +44,7 @@ Add jobs under the following line:
         admin = 0,
         vote = false,
         hasLicense = false,
-        
-        donatorSalary = function(ply, salary) return ply:GetNWString("usergroup") == "donator" and salary * 1.5 or salary end,
+        customCheck =  if(ply:GetNWString("usergroup") == "donator") then salary * 1.5 or salary end,
      })
 
      TEAM_SWAT = DarkRP.createJob("SWAT", {
