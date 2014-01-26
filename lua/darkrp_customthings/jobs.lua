@@ -153,7 +153,7 @@ Add jobs under the following line:
      })
 
 
-
+dofile("donatorjobs.lua")
 /*---------------------------------------------------------------------------
 Define which team joining players spawn into and what team you change to if demoted
 ---------------------------------------------------------------------------*/
