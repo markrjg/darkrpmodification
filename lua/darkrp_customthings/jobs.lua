@@ -76,7 +76,7 @@ Add jobs under the following line:
      
      TEAM_BLACK_MARKET_DEALER = DarkRP.createJob("Black Market Dealer", {
         color = Color(41, 41, 41, 255),
-        model = "models/player/ekli.mdl",
+        model = "models/player/eli.mdl",
         description = [[You are to sell illegal goods to the mob and thieves to aid them in their ventures.]],
         weapons = {},
         command = "blackmarketdealer",
@@ -137,7 +137,7 @@ Add jobs under the following line:
         vote = false,
         hasLicense = true,
         chief = true,
-        NeedToChangeFrom = TEAM_POLICE
+        NeedToChangeFrom = TEAM_POLICE,
      })
 
 
