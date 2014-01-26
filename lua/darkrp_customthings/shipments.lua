@@ -23,10 +23,10 @@ Add shipments and guns under the following line:
     AddCustomShipment("Pistol ammo", {
         model = "models/Items/BoxSRounds.mdl", 
         entity = "m9k_ammo_pistol", 
-        price = 300,
+        price = 400,
         amount = 10,
         separate = true, 
-        pricesep = 30, 
+        pricesep = 50, 
         noship = false, 
         allowed = {TEAM_GUN},
         shipmodel = "models/items/item_item_crate.mdl", 
@@ -41,12 +41,12 @@ Add shipments and guns under the following line:
     })
 
     AddCustomShipment("SMG ammo", {
-        model = "models/Items/BoxMRounds.mdl", 
+        model = "models/Items/BoxsRounds.mdl", 
         entity = "m9k_ammo_smg", 
-        price = 300,
+        price = 450,
         amount = 10,
         separate = true, 
-        pricesep = 30, 
+        pricesep = 60, 
         noship = false, 
         allowed = {TEAM_GUN},
         shipmodel = "models/items/item_item_crate.mdl", 
@@ -60,7 +60,105 @@ Add shipments and guns under the following line:
         getPrice = function(ply, price) return ply:GetNWString("usergroup") == "donator" and price * 0.9 or price end,
     })
 
+    AddCustomShipment("Assult rifle ammo", {
+        model = "models/Items/BoxMRounds.mdl", 
+        entity = "m9k_ammo_ar2", 
+        price = 500,
+        amount = 10,
+        separate = true, 
+        pricesep = 75, 
+        noship = false, 
+        allowed = {TEAM_GUN},
+        shipmodel = "models/items/item_item_crate.mdl", 
+        customCheck = function(ply) return ply:Frags() < 10 end,
+        weight = 15, 
+        buttonColor = Color(255, 255, 255, 255), 
+        label = "Assult rifle Ammo", 
 
+        shipmentClass = "spawned_shipment",
+        onBought = function(ply, shipment, ent) end,
+        getPrice = function(ply, price) return ply:GetNWString("usergroup") == "donator" and price * 0.9 or price end,
+    })
+    
+    AddCustomShipment("Shotgun ammo", {
+        model = "models/Items/BoxBuckshot.mdl", 
+        entity = "m9k_ammo_buckshot", 
+        price = 500,
+        amount = 10,
+        separate = true, 
+        pricesep = 75, 
+        noship = false, 
+        allowed = {TEAM_GUN},
+        shipmodel = "models/items/item_item_crate.mdl", 
+        customCheck = function(ply) return ply:Frags() < 10 end,
+        weight = 15, 
+        buttonColor = Color(255, 255, 255, 255), 
+        label = "Shotgun Ammo", 
+
+        shipmentClass = "spawned_shipment",
+        onBought = function(ply, shipment, ent) end,
+        getPrice = function(ply, price) return ply:GetNWString("usergroup") == "donator" and price * 0.9 or price end,
+    })
+    
+    AddCustomShipment("Sniper ammo", {
+        model = "models/Items/sniper_round_box.mdl", 
+        entity = "m9k_ammo_sniper_rounds", 
+        price = 750,
+        amount = 10,
+        separate = true, 
+        pricesep = 100, 
+        noship = false, 
+        allowed = {TEAM_GUN},
+        shipmodel = "models/items/item_item_crate.mdl", 
+        customCheck = function(ply) return ply:Frags() < 10 end,
+        weight = 15, 
+        buttonColor = Color(255, 255, 255, 255), 
+        label = "Sniper Ammo", 
+
+        shipmentClass = "spawned_shipment",
+        onBought = function(ply, shipment, ent) end,
+        getPrice = function(ply, price) return ply:GetNWString("usergroup") == "donator" and price * 0.9 or price end,
+    })
+    
+    AddCustomShipment(".357 ammo", {
+        model = "models/Items/357ammobox.mdl", 
+        entity = "m9k_ammo_357", 
+        price = 450,
+        amount = 10,
+        separate = true, 
+        pricesep = 55, 
+        noship = false, 
+        allowed = {TEAM_GUN},
+        shipmodel = "models/items/item_item_crate.mdl", 
+        customCheck = function(ply) return ply:Frags() < 10 end,
+        weight = 15, 
+        buttonColor = Color(255, 255, 255, 255), 
+        label = ".357 Ammo", 
+
+        shipmentClass = "spawned_shipment",
+        onBought = function(ply, shipment, ent) end,
+        getPrice = function(ply, price) return ply:GetNWString("usergroup") == "donator" and price * 0.9 or price end,
+    })
+    
+    AddCustomShipment("winchester ammo", {
+        model = "models/Items/sniper_round_box.mdl", 
+        entity = "m9k_ammo_357", 
+        price = 550,
+        amount = 10,
+        separate = true, 
+        pricesep = 70, 
+        noship = false, 
+        allowed = {TEAM_GUN},
+        shipmodel = "models/items/item_item_crate.mdl", 
+        customCheck = function(ply) return ply:Frags() < 10 end,
+        weight = 15, 
+        buttonColor = Color(255, 255, 255, 255), 
+        label = "Winchester Ammo", 
+
+        shipmentClass = "spawned_shipment",
+        onBought = function(ply, shipment, ent) end,
+        getPrice = function(ply, price) return ply:GetNWString("usergroup") == "donator" and price * 0.9 or price end,
+    })
 
 -- PISTOLS
     AddCustomShipment("USP", {
