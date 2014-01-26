@@ -22,7 +22,7 @@ Add shipments and guns under the following line:
 
     AddCustomShipment("Pistol ammo", {
         model = "models/Items/BoxSRounds.mdl", 
-        entity = " m9k_ammo_pistol", 
+        entity = "m9k_ammo_pistol", 
         price = 300,
         amount = 10,
         separate = true, 
