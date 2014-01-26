@@ -41,11 +41,9 @@ Add jobs under the following line:
         command = "thief",
         max = 3,
         salary = 50,
-        salarybase = 50,
         admin = 0,
         vote = false,
         hasLicense = false,
-        customCheck = function(ply) salary = ply:GetNWString("usergroup") == "donator" and salarybase * 1.5 or salarybase  return true end,
      })
 
      TEAM_SWAT = DarkRP.createJob("SWAT", {
