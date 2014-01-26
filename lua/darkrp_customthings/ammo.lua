@@ -66,3 +66,16 @@ DarkRP.createAmmoType("smg1", {
 
 Add new ammo types under the next line!
 ---------------------------------------------------------------------------*/
+DarkRP.createAmmoType("m9k_ammo_sniper_rounds", {
+	name = "Sniper Rifle Ammo",
+	model = "models/Items/sniper_round_box.mdl",
+	price = 100,
+	amountGiven = 10
+}
+
+DarkRP.createAmmoType("item_ammo_ar2", {
+	name = "Assult rifle ammo",
+	model = "models/Items/combine_rifle_cartridge01.mdl",
+	price = 50,
+	amountGiven = 30
+}
