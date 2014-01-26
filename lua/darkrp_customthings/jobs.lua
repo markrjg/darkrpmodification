@@ -116,7 +116,7 @@ Add jobs under the following line:
         salary = 75,
         admin = 0,
         vote = true,
-        hasLicense = true
+        hasLicense = true,
      })
 
      TEAM_CHIEF = DarkRP.createJob("Civil Protection Chief", {
