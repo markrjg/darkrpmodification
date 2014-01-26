@@ -47,10 +47,10 @@ e.g. you disable the gundealer and you make a new job as TEAM_GUN. If you want t
 work for your custom job, remake them to include your job as well.
 ---------------------------------------------------------------------------*/
 DarkRP.disabledDefaults["jobs"] = {
-	["chief"]     = false,
+	["chief"]     = true,
 	["citizen"]   = false,
 	["cook"]      = false, --Hungermod only
-	["cp"]        = false,
+	["cp"]        = true,
 	["gangster"]  = false,
 	["gundealer"] = false,
 	["hobo"]      = false,
@@ -63,16 +63,16 @@ DarkRP.disabledDefaults["jobs"] = {
 Shipments and pistols
 ---------------------------------------------------------------------------*/
 DarkRP.disabledDefaults["shipments"] = {
-	["AK47"]         = false,
-	["Desert eagle"] = false,
-	["Fiveseven"]    = false,
-	["Glock"]        = false,
-	["M4"]           = false,
-	["Mac 10"]       = false,
-	["MP5"]          = false,
-	["P228"]         = false,
-	["Pump shotgun"] = false,
-	["Sniper rifle"] = false,
+	["AK47"]         = true,
+	["Desert eagle"] = true,
+	["Fiveseven"]    = true,
+	["Glock"]        = true,
+	["M4"]           = true,
+	["Mac 10"]       = true,
+	["MP5"]          = true,
+	["P228"]         = true,
+	["Pump shotgun"] = true,
+	["Sniper rifle"] = true,
 }
 
 /*---------------------------------------------------------------------------
@@ -115,7 +115,7 @@ DarkRP.disabledDefaults["food"] = {
 Door groups
 ---------------------------------------------------------------------------*/
 DarkRP.disabledDefaults["doorgroups"] = {
-	["Cops and Mayor only"] = false,
+	["Cops and Mayor only"] = true,
 	["Gundealer only"]      = false,
 }
 
@@ -151,7 +151,7 @@ Jobs that are hitmen
 set to true to disable
 ---------------------------------------------------------------------------*/
 DarkRP.disabledDefaults["hitmen"] = {
-	["mobboss"] = false,
+	["mobboss"] = true,
 }
 
 /*---------------------------------------------------------------------------

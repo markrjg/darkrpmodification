@@ -1,3 +1,4 @@
+--[[
 /*---------------------------------------------------------------------------
 /*---------------------------------------------------------------------------
 DarkRP config settings
@@ -9,7 +10,7 @@ Warning:
 If this file is missing settings (because of e.g. an update), DarkRP will assume default values for these settings.
 You need not worry about updating this file. If a new setting is added you can manually add them to this file.
 ---------------------------------------------------------------------------*/
-
+--]]
 
 /*
 Toggle settings
@@ -390,9 +391,9 @@ GM.Config.hudText = "I am a hitman.\nPress E on me to request a hit!"
 -- The text above a hitman when he's got a hit
 GM.Config.hitmanText = "Hit\naccepted!"
 -- The cooldown time for a hit target (so they aren't spam killed)
-GM.Config.hitTargetCooldown = 120
+GM.Config.hitTargetCooldown = 300
 -- How long a customer has to wait to be able to buy another hit (from the moment the hit is accepted)
-GM.Config.hitCustomerCooldown = 240
+GM.Config.hitCustomerCooldown = 180
 
 /*---------------------------------------------------------------------------
 Hungermod module
