@@ -115,7 +115,7 @@ DarkRP.disabledDefaults["food"] = {
 Door groups
 ---------------------------------------------------------------------------*/
 DarkRP.disabledDefaults["doorgroups"] = {
-	["Cops and Mayor only"] = false,
+	["Cops and Mayor only"] = true,
 	["Gundealer only"]      = false,
 }
 
@@ -151,7 +151,7 @@ Jobs that are hitmen
 set to true to disable
 ---------------------------------------------------------------------------*/
 DarkRP.disabledDefaults["hitmen"] = {
-	["mobboss"] = false,
+	["mobboss"] = true,
 }
 
 /*---------------------------------------------------------------------------
