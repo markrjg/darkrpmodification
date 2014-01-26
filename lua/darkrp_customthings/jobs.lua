@@ -23,7 +23,7 @@ Add jobs under the following line:
         color = Color(255, 0, 0, 255),
         model = "models/player/combine_super_soldier.mdl",
         description = [[Your an admin on duty, You know what to do, Dont abuse!]],
-        weapons = {"arrest_stick", "unarrest_stick", "weapon_mp52", "stunstick", "door_ram", "weaponchecker"},
+        weapons = {"arrest_stick", "unarrest_stick", "m9k_deagle", "stunstick", "door_ram", "weaponchecker"},
         command = "admin",
         max = 4,
         salary = 0,
@@ -50,7 +50,7 @@ Add jobs under the following line:
         model = "models/player/swat.mdl",
         description = [[your duty is for heavy strikes when needed. You should stay in the PD until backup is needed.
                 Do everything you can to keep the city safe.]],
-        weapons = {"arrest_stick", "unarrest_stick", "m9k_m4a1", "weapon_glock2", "weapon_ak472", "ls_sniper", "weapon_m42", "weapon_mp52", "stunstick", "door_ram", "weaponchecker"},
+        weapons = {"arrest_stick", "unarrest_stick", "m9k_m4a1", "m9k_usp", "m9k_mp5", "stunstick", "door_ram", "weaponchecker"},
         command = "swat",
         max = 3,
         salary = 100,
@@ -64,7 +64,7 @@ Add jobs under the following line:
         model = "models/player/gasmask.mdl",
         description = [[your duty is for heavy strikes when needed. You should stay in the PD until backup is needed.
                 Do everything you can to keep the city safe.]],
-        weapons = {"arrest_stick", "unarrest_stick", "weapon_glock2", "weapon_ak472", "ls_sniper", "weapon_m42", "weapon_mp52", "stunstick", "door_ram", "weaponchecker"},
+        weapons = {"arrest_stick", "unarrest_stick", "m9k_m4a1", "m9k_usp", "m9k_mp5", "m9k_m98b, "stunstick", "door_ram", "weaponchecker"},
         command = "swatleader",
         max = 1,
         salary = 125,
@@ -76,7 +76,7 @@ Add jobs under the following line:
      
      TEAM_BLACK_MARKET_DEALER = DarkRP.createJob("Black Market Dealer", {
         color = Color(41, 41, 41, 255),
-        model = "models/player/leet.mdl",
+        model = "models/player/ekli.mdl",
         description = [[You are to sell illegal goods to the mob and thieves to aid them in their ventures.]],
         weapons = {},
         command = "blackmarketdealer",
@@ -89,9 +89,9 @@ Add jobs under the following line:
      
      TEAM_HITMAN = DarkRP.createJob("Hitman", {
         color = Color(66, 0, 110, 255),
-        model = "models/player/artic.mdl",
+        model = "models/player/leet.mdl",
         description = [[You are a hitman. You kill people for money. Do not kill randomly.]],
-        weapons = {"ls_sniper"},
+        weapons = {"m9k_model500"},
         command = "hitman",
         max = 2,
         salary = 30,
