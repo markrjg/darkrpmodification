@@ -139,6 +139,18 @@ Add jobs under the following line:
         NeedToChangeFrom = TEAM_CP,
      })
 
+     TEAM_CAR_DEALER = DarkRP.createJob("Car dealer", {
+        color = Color(41, 41, 41, 255),
+        model = "models/player/eli.mdl",
+        description = [[You are to sell cars to the residents for a profit.]],
+        weapons = {},
+        command = "cardealer",
+        max = 2,
+        salary = 45,
+        admin = 0,
+        vote = false,
+        hasLicense = false,
+     })
 
 
 
