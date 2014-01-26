@@ -164,29 +164,29 @@ Value settings
 -- adminweapons - Who can spawn weapons: 0: admins only, 1: supadmins only, 2: no one
 GM.Config.adminweapons					= 1
 -- arrestspeed - Sets the max arrest speed.
-GM.Config.arrestspeed					= 120
+GM.Config.arrestspeed					= 180
 -- babygodtime - How long the babygod lasts
 GM.Config.babygodtime					= 5
 -- chatsoundsdelay - How long to wait before letting a player emit a sound from their chat again. Leave this on at least a few seconds to prevent 'HAXHAXHAXHAXHAXHAX'-ing. Set to 0 to disable.
 GM.Config.chatsoundsdelay				= 5
 -- deathfee - the amount of money someone drops when dead.
-GM.Config.deathfee						= 30
+GM.Config.deathfee					= 30
 -- decaltimer - Sets the time to clear clientside decals. (seconds)
 GM.Config.decaltimer					= 120
 -- demotetime - Number of seconds before a player can rejoin a team after demotion from that team.
 GM.Config.demotetime					= 120
 -- doorcost - Sets the cost of a door.
-GM.Config.doorcost						= 30
+GM.Config.doorcost					= 30
 -- entremovedelay - how long to wait before removing a bought entity after disconnect.
 GM.Config.entremovedelay				= 0
 -- jailtimer - Sets the jailtimer. (in seconds)
-GM.Config.jailtimer						= 120
+GM.Config.jailtimer					= 120
 -- maxdoors - Sets the max amount of doors one can own.
-GM.Config.maxdoors						= 20
+GM.Config.maxdoors					= 20
 -- maxdrugs - Sets max drugs.
-GM.Config.maxdrugs						= 2
+GM.Config.maxdrugs					= 2
 -- maxfoods - Sets the max food cartons per Microwave owner.
-GM.Config.maxfoods						= 2
+GM.Config.maxfoods					= 2
 -- maxlawboards - The maximum number of law boards the mayor can place.
 GM.Config.maxlawboards					= 2
 -- maxletters - Sets max letters.
@@ -208,35 +208,35 @@ GM.Config.normalsalary					= 45
 -- npckillpay - Sets the money given for each NPC kill.
 GM.Config.npckillpay					= 10
 -- paydelay - Sets how long it takes before people get salary
-GM.Config.paydelay						= 160
+GM.Config.paydelay					= 160
 -- pocketitems - Sets the amount of objects the pocket can carry
 GM.Config.pocketitems					= 10
 -- pricecap - The maximum price of items (using /price)
-GM.Config.pricecap						= 500
+GM.Config.pricecap					= 500
 -- pricemin - The minimum price of items (using /price)
-GM.Config.pricemin						= 50
+GM.Config.pricemin					= 50
 -- propcost - How much prop spawning should cost. (prop paying must be enabled for this to have an effect)
-GM.Config.propcost						= 10
+GM.Config.propcost					= 10
 -- quakechance - Chance of an earthquake happening.
 GM.Config.quakechance					= 4000
 -- respawntime - Minimum amount of seconds a player has to wait before respawning.
 GM.Config.respawntime					= 1
 -- runspeed - Sets the max running speed.
-GM.Config.runspeed						= 240
+GM.Config.runspeed					= 240
 -- runspeed - Sets the max running speed for CP teams
-GM.Config.runspeedcp					= 255
+GM.Config.runspeedcp					= 240
 -- searchtime - Number of seconds for which a search warrant is valid.
-GM.Config.searchtime					= 30
+GM.Config.searchtime					= 60
 -- ShipmentSpawnTime - Antispam time between spawning shipments.
-GM.Config.ShipmentSpamTime				= 3
+GM.Config.ShipmentSpamTime				= 1
 -- shipmenttime - The number of seconds it takes for a shipment to spawn.
-GM.Config.shipmentspawntime				= 10
+GM.Config.shipmentspawntime				= 5
 -- startinghealth - the health when you spawn.
 GM.Config.startinghealth				= 100
 -- startingmoney - your wallet when you join for the first time.
-GM.Config.startingmoney					= 500
+GM.Config.startingmoney					= 5000
 -- vehiclecost - Sets the cost of a vehicle (To own it).
-GM.Config.vehiclecost					= 40
+GM.Config.vehiclecost					= 50
 -- wallettaxmax - Maximum percentage of tax to be paid.
 GM.Config.wallettaxmax					= 5
 -- wallettaxmin - Minimum percentage of tax to be paid.
@@ -244,11 +244,11 @@ GM.Config.wallettaxmin					= 1
 -- wallettaxtime - Time in seconds between taxing players. Requires server restart.
 GM.Config.wallettaxtime					= 600
 -- wantedtime - Number of seconds for which a player is wanted for.
-GM.Config.wantedtime					= 120
+GM.Config.wantedtime					= 180
 -- walkspeed - Sets the max walking speed.
-GM.Config.walkspeed						= 160
+GM.Config.walkspeed					= 160
 -- falldamagedamper - The damper on realistic fall damage. Default is 15. Decrease this for more damage.
-GM.Config.falldamagedamper				= 15
+GM.Config.falldamagedamper				= 10
 -- falldamageamount - The base damage taken from falling for static fall damage. Default is 10
 GM.Config.falldamageamount				= 10
 -- printeroverheatchance - The likelyhood of a printer overheating. The higher this number, the less likely. Minimum 3. Default 22
