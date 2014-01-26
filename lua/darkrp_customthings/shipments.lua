@@ -142,7 +142,7 @@ Add shipments and guns under the following line:
     
     AddCustomShipment("winchester ammo", {
         model = "models/Items/sniper_round_box.mdl", 
-        entity = "m9k_ammo_357", 
+        entity = "m9k_ammo_winchester", 
         price = 550,
         amount = 10,
         separate = true, 
