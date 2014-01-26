@@ -100,7 +100,7 @@ Add jobs under the following line:
         hasLicense = false,
      })
      
-     TEAM_POLICE = DarkRP.createJob("Civil Protection", {
+     TEAM_CP = DarkRP.createJob("Civil Protection", {
         color = Color(25, 25, 170, 255),
         model = {"models/player/police.mdl", "models/player/police_fem.mdl"},
         description = [[The protector of every citizen that lives in the city.
@@ -119,7 +119,7 @@ Add jobs under the following line:
         hasLicense = true,
      })
 
-     TEAM_CHIEF = DarkRP.createJob("Civil Protection Chief", {
+     TEAM_CP_CHIEF = DarkRP.createJob("Civil Protection Chief", {
         color = Color(20, 20, 255, 255),
         model = "models/player/combine_soldier_prisonguard.mdl",
         description = [[The Chief is the leader of the Civil Protection unit.
@@ -137,7 +137,7 @@ Add jobs under the following line:
         vote = false,
         hasLicense = true,
         chief = true,
-        NeedToChangeFrom = TEAM_POLICE,
+        NeedToChangeFrom = TEAM_CP,
      })
 
 
@@ -154,8 +154,8 @@ Define which teams belong to civil protection
 Civil protection can set warrants, make people wanted and do some other police related things
 ---------------------------------------------------------------------------*/
 GAMEMODE.CivilProtection = {
-	[TEAM_POLICE] = true,
-	[TEAM_CHIEF] = true,
+	[TEAM_CP] = true,
+	[TEAM_CP_CHIEF] = true,
 	[TEAM_MAYOR] = true,
 	[TEAM_SWAT] = true,
 	[TEAM_SWAT_LEADER] = true,
