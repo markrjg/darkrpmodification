@@ -1,3 +1,4 @@
+--[[
 /*---------------------------------------------------------------------------
 /*---------------------------------------------------------------------------
 DarkRP custom jobs
@@ -18,7 +19,7 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomJobFields
 
 Add jobs under the following line:
 ---------------------------------------------------------------------------*/
-
+--]]
      TEAM_ADMIN = DarkRP.createJob("Admin On Duty", {
         color = Color(255, 0, 0, 255),
         model = "models/player/combine_super_soldier.mdl",
@@ -48,9 +49,8 @@ Add jobs under the following line:
      TEAM_SWAT = DarkRP.createJob("SWAT", {
         color = Color(0,0, 139, 255),
         model = "models/player/swat.mdl",
-        description = [[your duty is for heavy strikes when needed. You should stay in the PD until backup is needed.
-                Do everything you can to keep the city safe.]],
-        weapons = {"arrest_stick", "unarrest_stick", "m9k_m4a1", "m9k_usp", "m9k_mp5", "stunstick", "door_ram", "weaponchecker"},
+        description = [[Your duty is for heavy strikes when needed. You should stay in the PD until backup is needed. Do everything you can to keep the city safe.]],
+        weapons = {"arrest_stick", "unarrest_stick", "weapon_glock2", "weapon_ak472", "ls_sniper", "weapon_m42", "weapon_mp52", "stunstick", "door_ram", "weaponchecker"},
         command = "swat",
         max = 3,
         salary = 100,
@@ -62,9 +62,8 @@ Add jobs under the following line:
      TEAM_SWAT_LEADER = DarkRP.createJob("SWAT leader", {
         color = Color(25, 25, 112, 255),
         model = "models/player/gasmask.mdl",
-        description = [[your duty is for heavy strikes when needed. You should stay in the PD until backup is needed.
-                Do everything you can to keep the city safe.]],
-        weapons = {"arrest_stick", "unarrest_stick", "m9k_m4a1", "m9k_usp", "m9k_mp5", "m9k_m98b", "stunstick", "door_ram", "weaponchecker"},
+        description = [[Your duty is for heavy strikes when needed. You should stay in the PD until backup is needed. Do everything you can to keep the city safe.]],
+        weapons = {"arrest_stick", "unarrest_stick", "weapon_glock2", "weapon_ak472", "ls_sniper", "weapon_m42", "weapon_mp52", "stunstick", "door_ram", "weaponchecker"},
         command = "swatleader",
         max = 1,
         salary = 125,

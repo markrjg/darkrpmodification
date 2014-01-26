@@ -1,3 +1,4 @@
+--[[
 /*---------------------------------------------------------------------------
 /*---------------------------------------------------------------------------
 DarkRP config settings
@@ -9,7 +10,7 @@ Warning:
 If this file is missing settings (because of e.g. an update), DarkRP will assume default values for these settings.
 You need not worry about updating this file. If a new setting is added you can manually add them to this file.
 ---------------------------------------------------------------------------*/
-
+--]]
 
 /*
 Toggle settings
@@ -270,9 +271,9 @@ GM.Config.F1MenuHelpPageTitle = "Wiki page"
 
 -- Put Steam ID's and ranks in this list, and the players will have that rank when they join.
 GM.Config.DefaultPlayerGroups = {
-        ["STEAM_0:0:24190819"] = "superadmin", -- Mark
-        ["STEAM_0:0:22034951"] = "superadmin", -- Tk
-        ["STEAM_0:0:11111111"] = "admin", -- Noone
+	["STEAM_0:0:24190819"] = "superadmin", -- Mark
+	["STEAM_0:0:22034951"] = "superadmin", -- Tk
+	["STEAM_0:0:11111111"] = "admin", -- Noone
 }
 
 -- Custom modules in this addon that are disabled.
