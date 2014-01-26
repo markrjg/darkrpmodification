@@ -64,7 +64,7 @@ Add jobs under the following line:
         model = "models/player/gasmask.mdl",
         description = [[your duty is for heavy strikes when needed. You should stay in the PD until backup is needed.
                 Do everything you can to keep the city safe.]],
-        weapons = {"arrest_stick", "unarrest_stick", "m9k_m4a1", "m9k_usp", "m9k_mp5", "m9k_m98b, "stunstick", "door_ram", "weaponchecker"},
+        weapons = {"arrest_stick", "unarrest_stick", "m9k_m4a1", "m9k_usp", "m9k_mp5", "m9k_m98b", "stunstick", "door_ram", "weaponchecker"},
         command = "swatleader",
         max = 1,
         salary = 125,
@@ -118,7 +118,7 @@ Add jobs under the following line:
         vote = true,
         hasLicense = true,
      })
-
+     
      TEAM_CP_CHIEF = DarkRP.createJob("Civil Protection Chief", {
         color = Color(20, 20, 255, 255),
         model = "models/player/combine_soldier_prisonguard.mdl",
