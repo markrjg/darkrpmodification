@@ -270,8 +270,9 @@ GM.Config.F1MenuHelpPageTitle = "Wiki page"
 
 -- Put Steam ID's and ranks in this list, and the players will have that rank when they join.
 GM.Config.DefaultPlayerGroups = {
-	["STEAM_0:0:00000000"] = "superadmin",
-	["STEAM_0:0:11111111"] = "admin",
+        ["STEAM_0:0:24190819"] = "superadmin", -- Mark
+        ["STEAM_0:0:22034951"] = "superadmin", -- Tk
+        ["STEAM_0:0:11111111"] = "admin", -- Noone
 }
 
 -- Custom modules in this addon that are disabled.
@@ -381,7 +382,7 @@ GM.Config.afkdemotetime = 600
 Hitmenu module
 ---------------------------------------------------------------------------*/
 -- The minimum price for a hit
-GM.Config.minHitPrice = 200
+GM.Config.minHitPrice = 500
 -- The minimum distance between a hitman and his customer when they make the deal
 GM.Config.minHitDistance = 150
 -- The text that tells the player he can press use on the hitman to request a hit
@@ -389,9 +390,9 @@ GM.Config.hudText = "I am a hitman.\nPress E on me to request a hit!"
 -- The text above a hitman when he's got a hit
 GM.Config.hitmanText = "Hit\naccepted!"
 -- The cooldown time for a hit target (so they aren't spam killed)
-GM.Config.hitTargetCooldown = 120
+GM.Config.hitTargetCooldown = 300
 -- How long a customer has to wait to be able to buy another hit (from the moment the hit is accepted)
-GM.Config.hitCustomerCooldown = 240
+GM.Config.hitCustomerCooldown = 180
 
 /*---------------------------------------------------------------------------
 Hungermod module
