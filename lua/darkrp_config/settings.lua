@@ -124,7 +124,7 @@ GM.Config.proppaying 					= false
 -- propspawning - Enable/disable props spawning for non-admins.
 GM.Config.propspawning 					= true
 -- removeclassitems - Enable/disable shipments/microwaves/etc. removal when someone changes team.
-GM.Config.removeclassitems 				= true
+GM.Config.removeclassitems 				= false
 -- respawninjail - Enable/disable whether people can respawn in jail when they die
 GM.Config.respawninjail 				= true
 -- restrictallteams - Enable/disable Players can only be citizen until an admin allows them.
