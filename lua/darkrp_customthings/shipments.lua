@@ -18,22 +18,85 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomShipmentFields
 
 Add shipments and guns under the following line:
 ---------------------------------------------------------------------------*/
-AddCustomShipment("USP", {
-        model = "models/weapons/w_pist_fokkususp.mdl", -- The model of the item that hovers above the shipment
-        entity = "m9k_usp", -- the entity that comes out of the shipment
-        price = 1750, -- the price of one shipment
-        amount = 10, -- how many of the item go in one purchased shipment
-        separate = false, -- whether the item is sold separately (usually used for guns)
-        pricesep = 150, -- the price of a separately sold item
-        noship = false, -- whether this item has a shipment
-        allowed = {TEAM_GUN}, -- OPTIONAL, which teams are allowed to buy this shipment/separate gun
-        shipmodel = "models/items/item_item_crate.mdl", -- OPTIONAL, the model of the shipment (this crate is the default)
-        customCheck = function(ply) return ply:Frags() < 10 end, -- OPTIONAL, extra conditions before people can purchase the shipment or separate item
-        weight = 15, -- OPTIONAL, the weight of the shipment. The default is the weight of the shipment
-        buttonColor = Color(255, 255, 255, 255), -- Optional: The color of the button in the F4 menu,
-        label = "Its a USP", -- Optional: the text on the button in the F4 menu
+
+-- PISTOLS
+    AddCustomShipment("USP", {
+        model = "models/weapons/w_pist_fokkususp.mdl", 
+        entity = "m9k_usp", 
+        price = 1750,
+        amount = 10,
+        separate = true, 
+        pricesep = 200, 
+        noship = false, 
+        allowed = {TEAM_GUN},
+        shipmodel = "models/items/item_item_crate.mdl", 
+        customCheck = function(ply) return ply:Frags() < 10 end,
+        weight = 15, 
+        buttonColor = Color(255, 255, 255, 255), 
+        label = "USP", 
 
         shipmentClass = "spawned_shipment",
         onBought = function(ply, shipment, ent) end,
         getPrice = function(ply, price) return ply:GetNWString("usergroup") == "donator" and price * 0.9 or price end,
-})
+    })
+
+    AddCustomShipment("M92 Beretta", {
+        model = "models/weapons/w_beretta_m92.mdl", 
+        entity = "m9k_m92beretta", 
+        price = 1500, 
+        amount = 10, 
+        separate = true, 
+        pricesep = 175, 
+        noship = false, 
+        allowed = {TEAM_GUN}, 
+        shipmodel = "models/items/item_item_crate.mdl", 
+        customCheck = function(ply) return ply:Frags() < 10 end, 
+        weight = 15, 
+        buttonColor = Color(255, 255, 255, 255), 
+        label = "M92 Beretta", 
+        
+        shipmentClass = "spawned_shipment",
+        onBought = function(ply, shipment, ent) end,
+        getPrice = function(ply, price) return ply:GetNWString("usergroup") == "donator" and price * 0.9 or price end,
+    })
+
+    AddCustomShipment("HK45C", {
+        model = "models/weapons/w_hk45c.mdl", 
+        entity = "m9k_hk45", 
+        price = 1750, 
+        amount = 10, 
+        separate = true, 
+        pricesep = 200, 
+        noship = false, 
+        allowed = {TEAM_GUN}, 
+        shipmodel = "models/items/item_item_crate.mdl", 
+        customCheck = function(ply) return ply:Frags() < 10 end, 
+        weight = 15, 
+        buttonColor = Color(255, 255, 255, 255), 
+        label = "HK45C", 
+        
+        shipmentClass = "spawned_shipment",
+        onBought = function(ply, shipment, ent) end,
+        getPrice = function(ply, price) return ply:GetNWString("usergroup") == "donator" and price * 0.9 or price end,
+    })
+
+    AddCustomShipment("Glock 18", {
+        model = "models/weapons/w_dmg_glock.mdl", 
+        entity = "m9k_glock", 
+        price = 2250, 
+        amount = 10, 
+        separate = true, 
+        pricesep = 250, 
+        noship = false, 
+        allowed = {TEAM_GUN}, 
+        shipmodel = "models/items/item_item_crate.mdl", 
+        customCheck = function(ply) return ply:Frags() < 10 end, 
+        weight = 15, 
+        buttonColor = Color(255, 255, 255, 255), 
+        label = "Glock 18", 
+        
+        shipmentClass = "spawned_shipment",
+        onBought = function(ply, shipment, ent) end,
+        getPrice = function(ply, price) return ply:GetNWString("usergroup") == "donator" and price * 0.9 or price end,
+    })
+
