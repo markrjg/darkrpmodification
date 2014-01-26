@@ -124,9 +124,9 @@ DarkRP.disabledDefaults["doorgroups"] = {
 Ammo packets
 ---------------------------------------------------------------------------*/
 DarkRP.disabledDefaults["ammo"] = {
-	["Pistol ammo"]  = false,
-	["Rifle ammo"]   = false,
-	["Shotgun ammo"] = false,
+	["Pistol ammo"]  = true,
+	["Rifle ammo"]   = true,
+	["Shotgun ammo"] = true,
 }
 
 /*---------------------------------------------------------------------------
