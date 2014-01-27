@@ -48,15 +48,15 @@ work for your custom job, remake them to include your job as well.
 ---------------------------------------------------------------------------*/
 DarkRP.disabledDefaults["jobs"] = {
 	["chief"]     = true,
-	["citizen"]   = false,
+	["citizen"]   = true,
 	["cook"]      = false, --Hungermod only
 	["cp"]        = true,
-	["gangster"]  = false,
-	["gundealer"] = false,
-	["hobo"]      = false,
-	["mayor"]     = false,
-	["medic"]     = false,
-	["mobboss"]   = false,
+	["gangster"]  = true,
+	["gundealer"] = true,
+	["hobo"]      = true,
+	["mayor"]     = true,
+	["medic"]     = true,
+	["mobboss"]   = true,
 }
 
 /*---------------------------------------------------------------------------
@@ -79,9 +79,9 @@ DarkRP.disabledDefaults["shipments"] = {
 Entities
 ---------------------------------------------------------------------------*/
 DarkRP.disabledDefaults["entities"] = {
-	["Drug lab"]      = false,
-	["Gun lab"]       = false,
-	["Money printer"] = false,
+	["Drug lab"]      = true,
+	["Gun lab"]       = true,
+	["Money printer"] = true,
 	["Microwave"]     = false, --Hungermod only
 }
 
