@@ -321,7 +321,7 @@ TEAM_HOBO = DarkRP.createJob("Hobo", {
      })
      
      TEAM_TECH = DarkRP.createJob("Technician", {
-        color = Color(, 160, 200, 255),
+        color = Color(160, 200, 255),
         model = "models/player/eli.mdl",
         description = [[You are to build wire contraptions and sell them to players for security and other purposes. No entity finders or abusing.]],
         weapons = {},
