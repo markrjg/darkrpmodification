@@ -309,7 +309,7 @@ TEAM_HOBO = DarkRP.createJob("Hobo", {
 
      TEAM_CAR_DEALER = DarkRP.createJob("Car dealer", {
         color = Color(0, 200, 50, 255),
-        model = "models/player/eli.mdl",
+        model = "models/player/odessa.mdl",
         description = [[You are to sell cars to the residents for a profit.]],
         weapons = {},
         command = "cardealer",
@@ -322,13 +322,26 @@ TEAM_HOBO = DarkRP.createJob("Hobo", {
      
      TEAM_TECH = DarkRP.createJob("Technician", {
         color = Color(160, 200, 255),
-        model = "models/player/eli.mdl",
+        model = "models/player/hostage04.mdl",
         description = [[You are to build wire contraptions and sell them to players for security and other purposes. No entity finders or abusing.]],
         weapons = {},
         command = "technician",
         max = 2,
         salary = 45,
         admin = 0,
+        vote = false,
+        hasLicense = false,
+     })
+     
+     TEAM_ZOMBIE = DarkRP.createJob("Zombie", {
+        color = Color(160, 200, 255),
+        model = "models/player/classic.mdl",
+        description = [[BLEEEHGGGHH]],
+        weapons = {m9k_knife},
+        command = "bleh",
+        max = 2,
+        salary = 45,
+        admin = 1,
         vote = false,
         hasLicense = false,
      })
