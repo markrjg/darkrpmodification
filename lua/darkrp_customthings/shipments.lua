@@ -1,40 +1,30 @@
-/*---------------------------------------------------------------------------
-/*---------------------------------------------------------------------------
-DarkRP custom shipments and guns
----------------------------------------------------------------------------
+--[[
+--SHIPMENTS
+default: https://github.com/FPtje/DarkRP/blob/master/gamemode/config/addentities.lua
+examples: http://wiki.darkrp.com/index.php/DarkRP:CustomShipmentFields
 
-This file contains your custom shipments and guns.
-This file should also contain shipments and guns from DarkRP that you edited.
+-- PLEASE NOTE - IF YOU WANT TO ADD AMMO SHIPMENTS AND HAVE THEM ONLY SHOW UP UNDER AMMO AS SINGLE BOXES
+-- AND UNDER SHIPMENTS AS SHIPMENTS DISABLE SEPARATE AND RECREATE AMMO UNDER "ammo.lua".
 
-Note: If you want to edit a default DarkRP shipment, first disable it in darkrp_config/disabled_defaults.lua
-	Once you've done that, copy and paste the shipment to this file and edit it.
-
-The default shipments and guns can be found here:
-https://github.com/FPtje/DarkRP/blob/master/gamemode/config/addentities.lua
-
-For examples and explanation please visit this wiki page:
-http://wiki.darkrp.com/index.php/DarkRP:CustomShipmentFields
+--]]
 
 
-Add shipments and guns under the following line:
----------------------------------------------------------------------------*/
--- AMMO
-
+-- Additional note - we need to make sure we're spawning the right entity.
+-- We also don't need to be using all these fields.
     AddCustomShipment("Pistol ammo", {
         model = "models/Items/BoxSRounds.mdl", 
-        entity = "m9k_ammo_pistol", 
+        entity = "m9k_ammo_pistol", -- Check this in server files.
         price = 400,
         amount = 10,
-        separate = true, 
+        separate = false, 
         pricesep = 50, 
         noship = false, 
         allowed = {TEAM_GUN},
-        shipmodel = "models/items/item_item_crate.mdl", 
-        customCheck = function(ply) return ply:Frags() < 10 end,
+        shipmodel = "models/items/item_item_crate.mdl",
         weight = 15, 
         buttonColor = Color(255, 255, 255, 255), 
-        label = "Pistol Ammo", 
-
+        label = "Pistol Ammo",
+        
         shipmentClass = "spawned_shipment",
         onBought = function(ply, shipment, ent) end,
         getPrice = function(ply, price) return ply:GetNWString("usergroup") == "donator" and price * 0.9 or price end,
@@ -42,15 +32,15 @@ Add shipments and guns under the following line:
 
     AddCustomShipment("SMG ammo", {
         model = "models/Items/BoxsRounds.mdl", 
-        entity = "m9k_ammo_smg", 
+        entity = "m9k_ammo_smg", -- Check this in server files.
         price = 450,
         amount = 10,
-        separate = true, 
+        separate = false, 
         pricesep = 60, 
         noship = false, 
         allowed = {TEAM_GUN},
         shipmodel = "models/items/item_item_crate.mdl", 
-        customCheck = function(ply) return ply:Frags() < 10 end,
+
         weight = 15, 
         buttonColor = Color(255, 255, 255, 255), 
         label = "SMG Ammo", 
@@ -65,7 +55,7 @@ Add shipments and guns under the following line:
         entity = "m9k_ammo_ar2", 
         price = 500,
         amount = 10,
-        separate = true, 
+        separate = false, 
         pricesep = 75, 
         noship = false, 
         allowed = {TEAM_GUN},
@@ -85,7 +75,7 @@ Add shipments and guns under the following line:
         entity = "m9k_ammo_buckshot", 
         price = 500,
         amount = 10,
-        separate = true, 
+        separate = false, 
         pricesep = 75, 
         noship = false, 
         allowed = {TEAM_GUN},
@@ -105,7 +95,7 @@ Add shipments and guns under the following line:
         entity = "m9k_ammo_sniper_rounds", 
         price = 750,
         amount = 10,
-        separate = true, 
+        separate = false, 
         pricesep = 100, 
         noship = false, 
         allowed = {TEAM_GUN},
@@ -125,7 +115,7 @@ Add shipments and guns under the following line:
         entity = "m9k_ammo_357", 
         price = 450,
         amount = 10,
-        separate = true, 
+        separate = false, 
         pricesep = 55, 
         noship = false, 
         allowed = {TEAM_GUN},
@@ -145,7 +135,7 @@ Add shipments and guns under the following line:
         entity = "m9k_ammo_winchester", 
         price = 550,
         amount = 10,
-        separate = true, 
+        separate = false, 
         pricesep = 70, 
         noship = false, 
         allowed = {TEAM_GUN},
