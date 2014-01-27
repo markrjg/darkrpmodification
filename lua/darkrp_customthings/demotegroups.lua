@@ -1,3 +1,4 @@
+--[[
 /*---------------------------------------------------------------------------
 /*---------------------------------------------------------------------------
 Demote groups
@@ -11,7 +12,10 @@ The examples shown below are the default demote groups
 HOW TO CREATE A DEMOTE GROUP:
 DarkRP.createDemoteGroup("Name of the group", {TEAM1, TEAM2})
 ---------------------------------------------------------------------------*/
-
+--]]
 
 -- Example: DarkRP.createDemoteGroup("Cops", {TEAM_POLICE, TEAM_CHIEF})
 -- Example: DarkRP.createDemoteGroup("Gangsters", {TEAM_GANG, TEAM_MOB})
+
+DarkRP.createDemoteGroup("CP", {TEAM_CP, TEAM_CP_CHIEF})
+DarkRP.createDemoteGroup("SWAT", {TEAM_SWAT, TEAM_SWAT_LEADER})

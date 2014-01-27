@@ -48,15 +48,15 @@ work for your custom job, remake them to include your job as well.
 ---------------------------------------------------------------------------*/
 DarkRP.disabledDefaults["jobs"] = {
 	["chief"]     = true,
-	["citizen"]   = false,
-	["cook"]      = false, --Hungermod only
+	["citizen"]   = true,
+	["cook"]      = true, --Hungermod only
 	["cp"]        = true,
-	["gangster"]  = false,
-	["gundealer"] = false,
-	["hobo"]      = false,
-	["mayor"]     = false,
-	["medic"]     = false,
-	["mobboss"]   = false,
+	["gangster"]  = true,
+	["gundealer"] = true,
+	["hobo"]      = true,
+	["mayor"]     = true,
+	["medic"]     = true,
+	["mobboss"]   = true,
 }
 
 /*---------------------------------------------------------------------------
@@ -79,9 +79,9 @@ DarkRP.disabledDefaults["shipments"] = {
 Entities
 ---------------------------------------------------------------------------*/
 DarkRP.disabledDefaults["entities"] = {
-	["Drug lab"]      = false,
-	["Gun lab"]       = false,
-	["Money printer"] = false,
+	["Drug lab"]      = true,
+	["Gun lab"]       = true,
+	["Money printer"] = true,
 	["Microwave"]     = false, --Hungermod only
 }
 
@@ -116,7 +116,7 @@ Door groups
 ---------------------------------------------------------------------------*/
 DarkRP.disabledDefaults["doorgroups"] = {
 	["Cops and Mayor only"] = true,
-	["Gundealer only"]      = false,
+	["Gundealer only"]      = true,
 }
 
 
@@ -133,8 +133,8 @@ DarkRP.disabledDefaults["ammo"] = {
 Agendas
 ---------------------------------------------------------------------------*/
 DarkRP.disabledDefaults["agendas"] = {
-	["Gangster's agenda"] = false,
-	["Police agenda"] = false,
+	["Gangster's agenda"] = true,
+	["Police agenda"] = true,
 }
 
 /*---------------------------------------------------------------------------
@@ -142,8 +142,8 @@ Chat groups (chat with /g)
 Chat groups do not have names, so their index is used instead.
 ---------------------------------------------------------------------------*/
 DarkRP.disabledDefaults["groupchat"] = {
-	[1] = false, -- Police group chat (mayor, cp, chief and/or your custom CP teams)
-	[2] = false, -- Group chat between gangsters and the mobboss
+	[1] = true, -- Police group chat (mayor, cp, chief and/or your custom CP teams)
+	[2] = true, -- Group chat between gangsters and the mobboss
 }
 
 /*---------------------------------------------------------------------------
@@ -160,6 +160,6 @@ When anyone is demote from any job in this group, they will be temporarily banne
 from every job in the group
 ---------------------------------------------------------------------------*/
 DarkRP.disabledDefaults["demotegroups"] = {
-	["Cops"]		 = false,
-	["Gangsters"]	 = false,
+	["Cops"]		 = true,
+	["Gangsters"]	 = true,
 }
