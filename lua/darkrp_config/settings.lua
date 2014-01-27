@@ -48,7 +48,7 @@ GM.Config.canforcedooropen				= true
 -- chatsounds - sounds are played when some things are said in chat
 GM.Config.chatsounds					= true
 -- chiefjailpos - Allow the Chief to set the jail positions.
-GM.Config.chiefjailpos 					= true
+GM.Config.chiefjailpos 					= false
 -- cit_propertytax - Enable/disable property tax that is exclusive only for citizens.
 GM.Config.cit_propertytax 				= false
 -- copscanunfreeze - Enable/disable the ability of cops to unfreeze other people's props
@@ -66,7 +66,7 @@ GM.Config.deathblack 					= false
 -- showdeaths - Display kill information in the upper right corner of everyone's screen.
 GM.Config.showdeaths 					= true
 -- deathpov - Enable/disable whether people see their death in first person view
-GM.Config.deathpov 						= false
+GM.Config.deathpov 						= true
 -- decalcleaner - Enable/Disable clearing ever players decals.
 GM.Config.decalcleaner 					= false
 -- disallowClientsideScripts - Clientside scripts can be very useful for customizing the HUD or to aid in building. This option bans those scripts.
@@ -80,21 +80,21 @@ GM.Config.droppocketarrest 				= false
 -- droppocketdeath - Enable/disable whether people drop the stuff in their pockets when they die.
 GM.Config.droppocketdeath 				= true
 -- dropweapondeath - Enable/disable whether people drop their current weapon when they die.
-GM.Config.dropweapondeath 				= false
+GM.Config.dropweapondeath 				= true
 -- Whether players can drop the weapons they spawn with
-GM.Config.dropspawnedweapons			= true
+GM.Config.dropspawnedweapons			= false
 -- dynamicvoice - Enable/disable whether only people in the same room as you can hear your mic.
 GM.Config.dynamicvoice 					= true
 -- earthquakes - Enable/disable earthquakes.
 GM.Config.earthquakes 					= false
 -- enablebuypistol - Turn /buy on of off.
-GM.Config.enablebuypistol 				= true
+GM.Config.enablebuypistol 				= false
 -- enforceplayermodel - Whether or not to force players to use their role-defined character models.
 GM.Config.enforceplayermodel 			= true
 -- globalshow - Whether or not to display player info above players' heads in-game.
 GM.Config.globalshow 					= false
 -- ironshoot - Enable/disable whether people need iron sights to shoot.
-GM.Config.ironshoot 					= true
+GM.Config.ironshoot 					= false
 -- showjob - Whether or not to display a player's job above their head in-game.
 GM.Config.showjob 						= true
 -- letters - Enable/disable letter writing / typing.
@@ -102,7 +102,7 @@ GM.Config.letters 						= true
 -- license - Enable/disable People need a license to be able to pick up guns
 GM.Config.license 						= false
 -- logging - Enable/disable logging everything that happens.
-GM.Config.logging 						= true
+GM.Config.logging 						= false
 -- lottery - Enable/disable creating lotteries for mayors
 GM.Config.lottery 						= true
 -- showname - Whether or not to display a player's name above their head in-game.
@@ -130,7 +130,7 @@ GM.Config.respawninjail 				= true
 -- restrictallteams - Enable/disable Players can only be citizen until an admin allows them.
 GM.Config.restrictallteams 				= false
 -- restrictbuypistol - Enabling this feature makes /buy available only to Gun Dealers.
-GM.Config.restrictbuypistol 			= false
+GM.Config.restrictbuypistol 			= true
 -- restrictdrop - Enable/disable restricting the weapons players can drop. Setting this to true disallows weapons from shipments from being dropped
 GM.Config.restrictdrop 					= false
 -- strictsuicide - Whether or not players should spawn where they suicided
@@ -140,7 +140,7 @@ GM.Config.telefromjail 					= true
 -- teletojail - Enable/disable teleporting to jail.
 GM.Config.teletojail 					= true
 -- unlockdoorsonstart - Enable/Disable unlocking all doors on map start.
-GM.Config.unlockdoorsonstart 			= false
+GM.Config.unlockdoorsonstart 			= true
 -- voiceradius - Enable/disable local voice chat.
 GM.Config.voiceradius 					= true
 -- tax - Whether players pay taxes on their wallets.
@@ -168,9 +168,9 @@ GM.Config.arrestspeed					= 180
 -- babygodtime - How long the babygod lasts
 GM.Config.babygodtime					= 5
 -- chatsoundsdelay - How long to wait before letting a player emit a sound from their chat again. Leave this on at least a few seconds to prevent 'HAXHAXHAXHAXHAXHAX'-ing. Set to 0 to disable.
-GM.Config.chatsoundsdelay				= 5
+GM.Config.chatsoundsdelay				= 15
 -- deathfee - the amount of money someone drops when dead.
-GM.Config.deathfee					= 30
+GM.Config.deathfee					= 50
 -- decaltimer - Sets the time to clear clientside decals. (seconds)
 GM.Config.decaltimer					= 120
 -- demotetime - Number of seconds before a player can rejoin a team after demotion from that team.
@@ -178,7 +178,7 @@ GM.Config.demotetime					= 120
 -- doorcost - Sets the cost of a door.
 GM.Config.doorcost					= 30
 -- entremovedelay - how long to wait before removing a bought entity after disconnect.
-GM.Config.entremovedelay				= 0
+GM.Config.entremovedelay				= 300
 -- jailtimer - Sets the jailtimer. (in seconds)
 GM.Config.jailtimer					= 120
 -- maxdoors - Sets the max amount of doors one can own.
@@ -220,7 +220,7 @@ GM.Config.propcost					= 10
 -- quakechance - Chance of an earthquake happening.
 GM.Config.quakechance					= 4000
 -- respawntime - Minimum amount of seconds a player has to wait before respawning.
-GM.Config.respawntime					= 1
+GM.Config.respawntime					= 5
 -- runspeed - Sets the max running speed.
 GM.Config.runspeed					= 240
 -- runspeed - Sets the max running speed for CP teams
@@ -236,7 +236,7 @@ GM.Config.startinghealth				= 100
 -- startingmoney - your wallet when you join for the first time.
 GM.Config.startingmoney					= 5000
 -- vehiclecost - Sets the cost of a vehicle (To own it).
-GM.Config.vehiclecost					= 50
+GM.Config.vehiclecost					= 0
 -- wallettaxmax - Maximum percentage of tax to be paid.
 GM.Config.wallettaxmax					= 5
 -- wallettaxmin - Minimum percentage of tax to be paid.
@@ -248,7 +248,7 @@ GM.Config.wantedtime					= 180
 -- walkspeed - Sets the max walking speed.
 GM.Config.walkspeed					= 160
 -- falldamagedamper - The damper on realistic fall damage. Default is 15. Decrease this for more damage.
-GM.Config.falldamagedamper				= 10
+GM.Config.falldamagedamper				= 20
 -- falldamageamount - The base damage taken from falling for static fall damage. Default is 10
 GM.Config.falldamageamount				= 10
 -- printeroverheatchance - The likelyhood of a printer overheating. The higher this number, the less likely. Minimum 3. Default 22
@@ -264,7 +264,7 @@ GM.Config.MoneyClass = "spawned_money"
 
 -- The skin DarkRP uses. Set to "default" to use the GMod default derma theme
 GM.Config.DarkRPSkin = "DarkRP"
-GM.Config.currency = "$"
+GM.Config.currency = "£"
 GM.Config.chatCommandPrefix = "/"
 GM.Config.F1MenuHelpPage = "http://wiki.darkrp.com/index.php/Main_Page"
 GM.Config.F1MenuHelpPageTitle = "Wiki page"
@@ -304,7 +304,6 @@ GM.Config.DisallowDrop = {
 GM.Config.DefaultWeapons = {
 	"keys",
 	"weapon_physcannon",
-	"gmod_camera",
 	"gmod_tool",
 	"pocket",
 	"weapon_physgun"
@@ -354,7 +353,7 @@ GM.Config.noStripWeapons = {
 GM.Config.allowedProperties = {
 	remover = true,
 	ignite = false,
-	extinguish = true,
+	extinguish = false,
 	keepupright = true,
 	gravity = true,
 	collision = true,
