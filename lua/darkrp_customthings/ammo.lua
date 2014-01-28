@@ -94,7 +94,7 @@ DarkRP.createAmmoType("pistol", {
 
 DarkRP.createAmmoType("smg1", {
     name = "SMG ammo",
-    model = "models/Items/BoxMRounds",
+    model = "models/Items/BoxMRounds.mdl",
     price = 50,
     amountGiven = 30,
     customCheck = function(ply) return ply:Team() == TEAM_GUN end
