@@ -21,7 +21,7 @@ examples: http://wiki.darkrp.com/index.php/DarkRP:CustomShipmentFields
         separate = false, 
         pricesep = 100, 
         noship = false, 
-        allowed = {TEAM_GUN},
+        allowed = {TEAM_MEDIC},
         shipmodel = "models/items/item_item_crate.mdl",
         weight = 15, 
         buttonColor = Color(255, 255, 255, 255), 
