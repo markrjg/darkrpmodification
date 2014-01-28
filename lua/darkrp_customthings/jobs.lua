@@ -300,11 +300,12 @@ TEAM_HOBO = DarkRP.createJob("Hobo", {
         description = [[BLEEEHGGGHH]],
         weapons = {"m9k_knife"},
         command = "bleh",
-        max = 2,
+        max = 0,
         salary = 45,
         admin = 1,
         vote = false,
         hasLicense = false,
+        NeedToChangeFrom = TEAM_CITIZEN,
      })
      
      
