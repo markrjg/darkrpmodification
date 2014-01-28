@@ -89,7 +89,7 @@ function ENT:SpawnItem()
 	local pos = self:GetPos()
 	if count <= 1 then self:Remove() end
 	local contents = self:Getcontents()
-	local weapon = ents.Create("spawned_weapon")
+	local weapon = ents.Create("spawned_ammo")
 
 	local weaponAng = self:GetAngles()
 	local weaponPos = self:GetAngles():Up() * 40 + weaponAng:Up() * (math.sin(CurTime() * 3) * 8)
@@ -104,9 +104,7 @@ function ENT:SpawnItem()
 		return
 	end
 
-	weapon.weaponclass = class
 	weapon:SetModel(model)
-	weapon.ammoadd = self.ammoadd or (weapons.Get(class) and weapons.Get(class).Primary.DefaultClip)
 	weapon.clip1 = self.clip1
 	weapon.clip2 = self.clip2
 	weapon.ShareGravgun = true
